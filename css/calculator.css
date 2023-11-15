@@ -1,0 +1,393 @@
+/* 被定义的元素的内边距和边框不再会增加它的宽度 */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* 功能样式 */
+.no-margin {
+    margin: 0 !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.display-inline-block {
+    display: inline-block;
+}
+
+/* 栅格系统 */
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12 {
+    height: 100%;
+    float: left;
+}
+
+.col-xs-12 {
+
+    width: 100%;
+}
+
+.col-xs-11 {
+    width: 91.66666667%;
+}
+
+.col-xs-10 {
+    width: 83.33333333%;
+}
+
+.col-xs-9 {
+    width: 75%;
+}
+
+.col-xs-8 {
+    width: 66.66666667%;
+}
+
+.col-xs-7 {
+    width: 58.33333333%;
+}
+
+.col-xs-6 {
+    height: 100%;
+    width: 50%;
+}
+
+.col-xs-5 {
+    width: 41.66666667%;
+}
+
+.col-xs-4 {
+    width: 33.33333333%;
+}
+
+.col-xs-3 {
+    width: 25%;
+}
+
+.col-xs-2 {
+    width: 16.66666667%;
+}
+
+.col-xs-1 {
+    width: 8.33333333%;
+}
+
+
+/* 计算机布局样式 */
+/* 盒子 */
+
+.Calculator-box {
+    position: relative;
+    margin-right: 50px;
+}
+
+.Calculator-border-box {
+    padding: 5px;
+    width: 520px;
+    background-color: rgba(250, 250, 250, 0.5);
+    margin: 0 0 60px 50px;
+    box-shadow: 2px -2px 10px #F7F7F9 inset;
+    position: relative;
+    z-index: 10000;
+}
+
+/* 背景色组件 */
+.Calculator-background-gradient-1 {
+    background: linear-gradient(-45deg, #23D5AB, #23A6D5, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 1200% 1200%;
+    animation: MoveGradient 60s ease-in-out infinite;
+    border-radius: 5px;
+}
+
+.Calculator-background-gradient-2 {
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 1200% 1200%;
+    animation: MoveGradient 40s ease-in-out infinite;
+    border-radius: 5px;
+}
+
+.Calculator-background-gradient-3 {
+    background: linear-gradient(-45deg, #23A6D5, #EE7752);
+    background-size: 1200% 1200%;
+    animation: MoveGradient 20s ease-in-out infinite;
+    border-radius: 5px;
+}
+
+.Calculator-background-gradient-4 {
+    background: linear-gradient(-45deg, #23D5AB, #EE7752);
+    background-size: 1200% 1200%;
+    animation: MoveGradient 20s ease-in-out infinite;
+    border-radius: 5px;
+}
+
+.Calculator-background-gradient-5 {
+    background: linear-gradient(-45deg, #E73C7E, #23D5AB);
+    background-size: 1200% 1200%;
+    animation: MoveGradient 20s ease-in-out infinite;
+    border-radius: 5px;
+}
+
+.Calculator-background-gradient-6 {
+    background: linear-gradient(-45deg, #EE7752, #23D5AB);
+    background-size: 1200% 1200%;
+    animation: MoveGradient 20s ease-in-out infinite;
+    border-radius: 5px;
+}
+
+/* 渐变色 */
+@keyframes MoveGradient {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+/* input框组件 */
+.Calculator-input {
+    /* background-color:transparent; */
+    overflow: hidden;
+    border: 0;
+}
+
+/* 大小组件 */
+
+.size-lg {
+    width: 400px;
+}
+
+.size-lg > .Calculator-size {
+    width: 400px;
+    height: 647px;
+}
+
+.size-default {
+    width: 300px;
+}
+
+.size-default > .Calculator-size {
+    width: 300px;
+    height: 485px;
+}
+
+.size-sm {
+    width: 200px;
+}
+
+.size-sm > .Calculator-size {
+    width: 200px;
+    height: 323px;
+}
+
+/* 设置初始大小后，按钮可以全部换成百分比 */
+
+/* 盒子 */
+.Calculator-input-box-default {
+    height: 25%;
+    width: 100%;
+    background-color: transparent;
+
+    text-align: right;
+    color: whitesmoke;
+    vertical-align: bottom;
+
+    font-size: 3em;
+    font-weight: 100;
+    font-family: "微软雅黑";
+
+    letter-spacing: 6px;
+    /* 字体间隔 */
+
+    outline: none;
+/ / 去除选中状态边框 border: none;
+
+    box-shadow: 2px 0px 5px #F7F7F9;
+}
+
+.Calculator-input-box-small {
+    height: 5%;
+    width: 100%;
+    background-color: transparent;
+
+    line-height: 100px;
+    text-align: right;
+    color: rgba(255, 255, 255, 0.6);
+
+    font-size: 1em;
+    font-weight: 100;
+    font-family: "微软雅黑";
+
+    letter-spacing: 1px;
+    /* 字体间隔 */
+
+    outline: none;
+/ / 去除选中状态边框 border: none;
+
+    box-shadow: 0px 0px 3px #F7F7F9 inset;
+}
+
+/* Button组 */
+.Calculator-button {
+    height: 100%;
+    width: 100%;
+    display: inline-block;
+    background-color: rgba(100, 199, 220, 0.1);
+    border: none;
+    outline: 0;
+    box-shadow: 0px 0px 3px #F7F7F9 inset;
+
+}
+
+.btn-highlight {
+    background-color: rgb(250, 250, 250, 0.2);
+}
+
+.btn-default {
+    height: 65px;
+    width: 105.17px;
+}
+
+.btn-sm {
+    height: 50px;
+    width: 80.9px;
+}
+
+
+/* 按钮表格组 */
+.Calculator-table {
+    width: 100%;
+    height: 70%;
+    border: transparent;
+    box-shadow: 2px -2px 10px #F7F7F9 inset;
+}
+
+.Calculator-table > tbody > tr > td > button {
+    transition: 0.2s ease-in-out;
+    font-family: "微软雅黑";
+    font-size: 25px;
+    font-weight: 100;
+    color: rgb(255, 255, 255);
+}
+
+.Calculator-table > tbody > tr > td > button:hover {
+    background-color: rgb(255, 255, 255, 0.3);
+}
+
+
+/* 选择按钮 */
+.select-btn {
+    font-famliy: "微软雅黑";
+    font-weight: 100;
+    font-size: 1.1em;
+    color: white;
+    background: linear-gradient(-45deg, #23A6D5, #EE7752);
+    background-size: 666% 666%;
+    animation: MoveGradient 2s ease-in-out infinite;
+    border: none;
+    outline: 0;
+    box-shadow: 0px 0px 3px #F7F7F9 inset;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.select-btn:hover {
+    opacity: 0.9;
+    background: linear-gradient(-45deg, #23A6D5, #EE7752);
+
+
+}
+
+/* span三角形 */
+.triangle-tobottom {
+    display: inline-block;
+    border-width: 5px;
+    border-color: whitesmoke transparent transparent transparent;
+    border-style: solid;
+}
+
+.ul-dropmenu {
+    width: 105.16px;
+    margin-left: -5px;
+    margin-top: 20px;
+    display: none;
+    list-style: none;
+    position: absolute;
+    padding: 0;
+    color: ghostwhite;
+    text-align: left;
+    transition: 0.3s ease-in-out;
+}
+
+.ul-dropmenu > li {
+    min-height: 50px;
+    margin: 3px 0;
+    padding: 4px;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.ul-dropmenu > li > a {
+
+}
+
+.ul-dropmenu > li:nth-child(1) {
+    background: linear-gradient(-45deg, #23D5AB, #23A6D5, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 1200% 1200%;
+    animation: MoveGradient 3s ease-in-out infinite;
+    opacity: 0.75;
+}
+
+.ul-dropmenu > li:nth-child(2) {
+    background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+    background-size: 1200% 1200%;
+    animation: MoveGradient 2s ease-in-out infinite;
+    opacity: 0.75;
+}
+
+.ul-dropmenu > li:nth-child(3) {
+    background: linear-gradient(-45deg, #23A6D5, #23D5AB);
+    background-size: 1200% 1200%;
+    animation: MoveGradient 1s ease-in-out infinite;
+    opacity: 0.75;
+}
+
+.ul-dropmenu > li:nth-child(4) {
+    background: linear-gradient(-45deg, #23D5AB, #EE7752);
+    background-size: 1200% 1200%;
+    animation: MoveGradient 1s ease-in-out infinite;
+    opacity: 0.75;
+}
+
+.ul-dropmenu > li:nth-child(5) {
+    background: linear-gradient(-45deg, #E73C7E, #23D5AB);
+    background-size: 1200% 1200%;
+    animation: MoveGradient 1s ease-in-out infinite;
+    opacity: 0.75;
+}
+
+.ul-dropmenu > li:nth-child(6) {
+    background: linear-gradient(-45deg, #EE7752, #23D5AB);
+    background-size: 1200% 1200%;
+    animation: MoveGradient 1s ease-in-out infinite;
+    opacity: 0.75;
+}

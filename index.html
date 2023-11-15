@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/calculator.css"/>
+</head>
+<body>
+<!-- header -->
+<header id="header">
+    <!-- 导航栏 -->
+    <section id="topNavbar" class="container">
+        <nav>
+            <ul class="nav nav-pills">
+                <div class="navbar-brand">
+                    <a href="#" title="Home">Home</a>
+                </div>
+                <li><a class="active" href="#" title="Calculator">Calculator</a></li>
+                <li><a href="../../Primer-HTML.html" title="HTML 入门教程">HTML</a></li>
+                <li><a href="../../Primer-CSS.html" title="CSS 入门教程">CSS</a></li>
+                <li><a href="../../Primer-JavaScript.html" title="JavaScript 入门教程">JavaScript</a></li>
+            </ul>
+        </nav>
+    </section>
+    <!-- 巨幕 -->
+    <section id="headerScreen" iclass="container-fluid">
+        <div class="giant-screen">
+            <div class="container">
+                <h1 id="header1">Task one</h1>
+                <p class="lead">A beautiful calculator</p>
+            </div>
+        </div>
+    </section>
+</header>
+
+<main id="main">
+    <article>
+        <!-- Calculator Section -->
+        <section>
+            <div class="container">
+                <!-- 第一个计算器 -->
+                <div class="Calculator-border-box">
+                    <div class="size-default Calculator-box display-inline-block">
+                        <div id="Calculator-bg" class="Calculator-background-gradient-1 Calculator-size">
+                            <!-- 主显示框 -->
+                            <input id="mainTextarea" type="text" class="Calculator-input Calculator-input-box-default"
+                                   oninput="show(event)"/>
+                            <!-- 辅助显示框 -->
+                            <input id="secondTextarea" type="text" class="Calculator-input Calculator-input-box-small"/>
+                            <!-- 按钮组 -->
+                            <table class="Calculator-table" border="1" cellspacing="0" cellpadding="1">
+                                <tbody>
+                                <!-- 第一行 -->
+                                <tr>
+                                    <td>
+                                        <button onclick="buttonClickBcak(this)" value="C" title="回退" type="button"
+                                                class="Calculator-button">C
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button onclick="buttonClickAdd(this)" value="(" title="左括号" type="button"
+                                                class="Calculator-button">(
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button onclick="buttonClickAdd(this)" value=")" title="右括号" type="button"
+                                                class="Calculator-button">)
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button onclick="buttonClickAdd(this)" value="/" title="除号" type="button"
+                                                class="Calculator-button btn-highlight">÷
+                                        </button>
+                                    </td>
+                                </tr>
+                                <!-- 第二行 -->
+                                <tr>
+                                    <td>
+                                        <button onclick="buttonClickAdd(this)" value="1" title="1" type="button"
+                                                class="Calculator-button">1
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button onclick="buttonClickAdd(this)" value="2" title="2" type="button"
+                                                class="Calculator-button">2
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button onclick="buttonClickAdd(this)" value="3" title="3" type="button"
+                                                class="Calculator-button">3
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button onclick="buttonClickAdd(this)" value="*" title="乘号" type="button"
+                                                class="Calculator-button btn-highlight">×
+                                        </button>
+                                    </td>
+                                </tr>
+                                <!-- 第三行 -->
+                                <tr>
+                                    <td>
+                                        <button onclick="buttonClickAdd(this)" value="4" title="5" type="button"
+                                                class="Calculator-button">4
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button onclick="buttonClickAdd(this)" value="5" title="5" type="button"
+                                                class="Calculator-button">5
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button onclick="buttonClickAdd(this)" value="6" title="6" type="button"
+                                                class="Calculator-button">6
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button onclick="buttonClickAdd(this)" value="-" title="减号" type="button"
+                                                class="Calculator-button btn-highlight">-
+                                        </button>
+                                    </td>
+                                </tr>
+                                <!-- 第四行 -->
+                                <tr>
+                                    <td>
+                                        <button onclick="buttonClickAdd(this)" value="7" title="7" type="button"
+                                                class="Calculator-button">7
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button onclick="buttonClickAdd(this)" value="8" title="8" type="button"
+                                                class="Calculator-button">8
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button onclick="buttonClickAdd(this)" value="9" title="9" type="button"
+                                                class="Calculator-button">9
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button onclick="buttonClickAdd(this)" value="+" title="加号" type="button"
+                                                class="Calculator-button btn-highlight">+
+                                        </button>
+                                    </td>
+                                </tr>
+                                <!-- 第五行 -->
+                                <tr>
+                                    <td colspan="2">
+                                        <button onclick="buttonClickAdd(this)" title="0" value="0" type="button"
+                                                class="Calculator-button">0
+                                        </button>
+                                    </td>
+                                    <!-- <td><button type="button" class="Calculator-button"></button></td> -->
+                                    <td>
+                                        <button onclick="buttonClickAdd(this)" type="button" title="小数点" value="."
+                                                class="Calculator-button">.
+                                        </button>
+                                    </td>
+                                    <td>
+                                        <button onclick="JudgeButton()" type="button" title="等号" value="="
+                                                class="Calculator-button btn-highlight">=
+                                        </button>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <button type="button" onmouseover="ulshow()" onmouseleave="ulhide()" class="select-btn btn-default"
+                            title="单击选色">颜色
+                        <div
+                                class="triangle-tobottom"></div>
+                        <ul class="ul-dropmenu" id="btn-dropmenu1">
+                            <li onclick="listyle(1)" title="六色渐变"></li>
+                            <li onclick="listyle(2)" title="四色渐变"></li>
+                            <li onclick="listyle(3)" title="2色渐变-1"></li>
+                            <li onclick="listyle(4)" title="2色渐变-2"></li>
+                            <li onclick="listyle(5)" title="2色渐变-3"></li>
+                            <li onclick="listyle(6)" title="2色渐变-4"></li>
+                        </ul>
+                    </button>
+
+                </div>
+
+            </div>
+        </section>
+        <!-- End of Calculator Section-->
+    </article>
+</main>
+
+
+<!-- footer -->
+<div id="audio-box"></div>
+<!-- footer -->
+<footer id="footer">CopyRight</footer>
+<!-- stack类 -->
+<script src="js/stack.js" type="text/javascript" charset="utf-8"></script>
+<!--计算器算法 -->
+<script src="js/calculator.js" type="text/javascript" charset="utf-8"></script>
+<!-- 功能JS插件 -->
+<script src="js/functional.js" type="text/javascript" charset="utf-8"></script>
+
+</body>
+</html>
