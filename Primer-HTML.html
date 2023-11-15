@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>HTML Primer</title>
+    <!-- 外部样式表 -->
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+<!-- header -->
+<header id="header">
+    <!-- 导航栏 -->
+    <section id="topNavbar" class="container-fluid no-padding">
+        <nav class="container">
+            <ul class="nav nav-pills">
+                <div class="navbar-brand">
+                    <a href="#" title="欢迎学习HTML,相信我,HTML真的非常简单!">HTML Primer</a>
+                </div>
+                <li><a href="index.html" title="Calculator">Calculator</a></li>
+                <li><a class="active" href="Primer-HTML.html" title="HTML 入门教程">HTML</a></li>
+                <li><a href="Primer-CSS.html" title="CSS 入门教程">CSS</a></li>
+                <li><a href="Primer-JavaScript.html" title="JavaScript 入门教程">JavaScript</a></li>
+            </ul>
+        </nav>
+    </section>
+    <!-- 巨幕 -->
+    <section id="headerScreen" iclass="container-fluid">
+        <div class="giant-screen">
+            <div class="container">
+                <h1 id="header1">HTML 入门教程</h1>
+                <p class="lead">相信我，HTML真的非常简单！</p>
+
+            </div>
+        </div>
+    </section>
+</header>
+
+<!-- 主体内容 -->
+<main id="main" class="container">
+    <!-- 教程主体 -->
+    <article class="main-left">
+        <!-- 概述 -->
+        <section id="section1" class="content">
+            <h2>一、概述</h2>
+            <p class="lead">相信我，HTML真的非常简单！</p>
+            <h3>写在前边</h3>
+            <p class="lead">good good study，day day up！</p>
+            <p class="lead">HTML控制网页的结构与内容，CSS控制网页的颜值，JavaScript控制网页的行为。</p>
+        </section>
+
+        <!-- HTML 简介 -->
+        <section id="section2" class="content">
+            <h2>二、HTML 简介</h2>
+            <p class="lead">HTML 是拿来做什么滴呢？</p>
+            <p>
+                HTML 是用来描述网页的一种语言，描述你所看见的一切。<br/>
+                HTML 的全名是：“超文本标记语言 (Hyper Text Markup Language)”。<br/>
+                HTML 不是一种编程语言，而是一种标记语言 (markup language)。<br/>
+                标记语言是一套标记标签 (markup tag)。<br/>
+                HTML 使用标记标签来描述网页。<br/>
+                难理解？<br/>
+                <strong tltle="废话少说,放码过来">Talking is cheap,<br/>Show you the Code!</strong>
+            </p>
+
+            <!-- Hello World! -->
+            <h3 id="section2-1" title="你好,世界!">Hello World!</h3>
+            <p class="lead">你好 世界</p>
+            <div class="highlight">
+                <xmp>
+                    <html>
+                    <head>
+                        <title>HTML Primer</title>
+                    </head>
+                    <body>
+                    <h1>Hello World!</h1>
+                    <p>Hello World!</p>
+                    <反斜杠body>
+                    </html>
+                </xmp>
+                <h1>Hello World!</h1>
+                <p>Hello World!</p>
+            </div>
+            <p class="lead">你可以在网页上呈现你想呈现的一切!</p>
+            <p>但需要有一个固定格式,就是下面这个样子</p>
+            <div class="highlight">
+                <xmp>
+                    <html>
+                    <head>
+                        <title>HTML Primer</title>
+                    </head>
+                    <body>
+                    <p>
+                        &lt;html&gt;是开始标签 &lt;/html&gt;是结束标签<br/>
+                        html之所以能描述网页，就是靠html这一对标签。<br/>
+                        <strong>请牢牢记住：html标签之间的文本描述网页的一切，没错，就是一切，但仅仅是描述一切</strong><br></p>
+                    <p>
+                        &lt;head&gt;是开始标签 &lt;/head&gt;是结束标签<br/>
+                        幕后工作者你是懂的，默默付出的“标签对”在网页中也有。<br/>
+                        <strong>请牢牢记住：head标签之间的文本是“幕后工作者”，你越细心,就越容易看到的它们的作用。
+                            比如上述示例title标签究竟在哪产生作用的呢？</strong><br/></p>
+                    <p>
+                        &lt;body&gt;是开始标签 &lt;/body&gt;是结束标签<br/>
+                        前台靓丽，你所看到的一切的一切都是在body中。<br/>
+                        <strong>请牢牢记住：body标签之间的文本你所能看见的一切</strong><br/>
+                    </p>
+                    <反斜杠body>
+                    </html>
+                </xmp>
+                <p>
+                    &lt;html&gt;是开始标签 &lt;/html&gt;是结束标签<br/>
+                    html之所以能描述网页，就是靠html这一对标签。<br/>
+                    <strong>请牢牢记住：html标签之间的文本描述网页的一切，没错，就是一切，但仅仅是描述一切</strong><br/></p>
+                <p>
+                    &lt;head&gt;是开始标签 &lt;/head&gt;是结束标签<br/>
+                    幕后工作者你是懂的，默默付出的“标签对”在网页中也有。<br/>
+                    <strong>请牢牢记住：head标签之间的文本是“幕后工作者”，你越细心,就越容易看到的它们的作用。
+                        比如上述示例title标签究竟在哪产生作用的呢？</strong><br/></p>
+                <p>
+                    &lt;body&gt;是开始标签 &lt;/body&gt;是结束标签<br/>
+                    前台靓丽，你所看到的一切的一切都是在body中。<br/>
+                    <strong>请牢牢记住：body标签之间的文本你所能看见的一切</strong><br/>
+                </p>
+            </div>
+            <p>
+                &lt;html&gt;是开始标签 &lt;/html&gt;是结束标签<br/>
+                html之所以能描述网页，就是靠html这一对标签。<br/>
+                <strong>请牢牢记住：html标签之间的文本描述网页的一切，没错，就是一切，但仅仅是描述一切</strong><br/></p>
+            <p>
+                &lt;head&gt;是开始标签 &lt;/head&gt;是结束标签<br/>
+                幕后工作者你是懂的，默默付出的“标签对”在网页中也有。<br/>
+                <strong>请牢牢记住：head标签之间的文本是“幕后工作者”，你越细心,就越容易看到的它们的作用。
+                    比如上述示例title标签究竟在哪产生作用的呢？</strong><br/></p>
+            <p>
+                &lt;body&gt;是开始标签 &lt;/body&gt;是结束标签<br/>
+                前台靓丽，你所看到的一切的一切都是在body中。<br/>
+                <strong>请牢牢记住：body标签之间的文本你所能看见的一切</strong><br/>
+            </p>
+
+
+            <!-- 选择一个IDE -->
+            <h3 id="section2-2">选择一个IDE</h3>
+            <p>写代码总要有个工具，有些巅峰大佬喜欢用记事本怼，没错就是记事本，复制粘贴示例到记事本，保存文件，尾缀为.html，保存路径为桌面，双击即可。但毕竟这都9102年了，效率不高，我可不干！</p>
+            <p class="lead">想偷懒吗？那肯定的啊！</p>
+            <p><strong>HBuilder X</strong> 值得你拥有:<a href="http://www.dcloud.io" target="_blank">http://www.dcloud.io</a>
+            </p>
+            <p>如何使用HBuilder创建一个项目：下载->安装->运行->看到主页面->文件->新建->项目->输入项目名称->选择基础模板：“HTML基本项目”->完成->找到index.html->运行</p>
+            <p class="lead">如果你是大佬</p>
+            <p><strong>Visual Studio Code</strong> 值得你拥有:<a href="https://code.visualstudio.com" target="_blank">https://code.visualstudio.com</a>
+            </p>
+            <p>无论是写HTML，C/C++，JAVA，还是写童话故事，VSCode都能满足你。</p>
+
+            <!-- 这是一对有意义标签 -->
+            <h3 id="section2-3">这是一对有意义标签</h3>
+            <p class="lead">标签的艺术(HTML的精髓)</p>
+            <div class="highlight">
+                <xmp>
+                    <html>
+                    <head>
+                        <title>HTML Primer</title>
+                    </head>
+                    <body>
+                    <h1>Hello World!</h1>
+                    <p>Hello World!</p>
+                    <反斜杠body>
+                    </html>
+                </xmp>
+                <h1>Hello World!</h1>
+                <p>Hello World!</p>
+            </div>
+
+            <p>在HTML中，有很多很多标签对，它们其中有很多很多都有其独特的含义，准确的说，是语义！</p>
+            <p class="lead">什么是语义？先不管，只需要记住HTML的精髓就是<strong>标签的语义</strong></p>
+            <p>看示例，只需要记住：h1标签代表一级标题(head title)</p>
+            <p>p标签代表一个段落(paragraph)</p>
+            <p class="lead">想知道更多，不急不急慢慢来。此处应该动手实践，快去下载IDE（集成开发环境），把网页运行起来吧！</p>
+        </section>
+
+        <!-- HTML 语义化 -->
+        <section id="section3" class="content">
+            <h2>三、HTML 语义化</h2>
+            <p class="lead">HTML的重点<strong>不在于掌握了多少标签</strong>（虽然标签确实很多，但凭借语义，能迅速记住它），因此，只要你能掌握语义的含义并且去尝试编写一个语义结构良好的页面，你的HTML会学的顺风顺水。
+            </p>
+            <p class="lead">HTML的精髓就在于标签的语义。所以，请像写文章一样去写一个有结构层次感的网页</p>
+            <p>如同学习英语一般，几千个单词，用得越多，记得越多。对于HTML而言，常用的标签数量不到100个，凭借语义，是很容易记忆的。</p>
+
+            <!-- 选择一个IDE -->
+            <h3 id="section3-1">什么是语义？</h3>
+            <p>语义指的是：标签清楚地向浏览器和开发者描述其本身的意义。</p>
+            <p>h1标签向浏览器和开发者描述：这里有一个最重要的标题。</p>
+            <p>img标签向浏览器和开发者描述：这里有一个一张图片。</p>
+            <h3 id="section3-2">那么语义化有什么作用呢？</h3>
+            <p class="lead">面向开发者：根据语义标签快速定位到对应位置的代码，从而利于开发调试和后期维护。像写文章的那样写一个页面，从代码结构和层次可以快速定位到代码。</p>
+            <p class="lead">面向浏览器：语义能够让搜索引擎小朋友不迷路，有利于搜索引擎小朋友更好的理解我们的网页，从而获取更多的有效信息，提升网页的权重。</p>
+
+            <p>HTML决定了<strong>网页的结构与内容</strong>，基础不牢，地动山摇，如何打好基础？就是凭借语义化标签</p>
+            <ol>
+                <li>大部分标签都有自身的语义</li>
+                <li>h1标签，表示“header1”,最高级标题，代表一个页面中最重要的标题，<a href="#header1">点击查看：本网页h1标签(渐变色横栏中的“HTML 入门教程”)</a></li>
+                <li>h2标签，表示“header2”,二级标题，代表一个页面中相对比较重要的标题。</li>
+                <li>此外还有h3到h6，共六个级别。</li>
+                <li>p标签，表示“paragraph”，代表一个段落。当你需要在网页上写一个段落时，就可以用p标签。</li>
+                <li>你目前所看到的这6行数据，是用了一个有序列表标签&lt;ol&gt;&lt;/ol&gt;(order list),<br/>在&lt;ol&gt;&lt;/ol&gt;里面有&lt;li&gt;&lt;/li&gt;
+                    标签对，代表列表中的一个项目，如你所看到的，我用了6个li标签对。
+                </li>
+            </ol>
+            <div class="highlight">
+                <xmp>
+                    <ol>
+                        <li>大部分标签都有自身的语义</li>
+                        <li>
+                            h1标签，表示“header1”,最高级标题，代表一个页面中最重要的标题，
+                            <a href="#header1">点击查看：本网页h1标签(渐变色横栏中的“HTML 入门教程”)</a>
+                        </li>
+                        <li>h2标签，表示“header2”,二级标题，代表一个页面中相对比较重要的标题。</li>
+                        <li>此外还有h3到h6，共六个级别。</li>
+                        <li>p标签，表示“paragraph”，代表一个段落。当你需要在网页上写一个段落时，就可以用p标签。</li>
+                        <li>
+                            你目前所看到的这6行数据，是用了一个有序列表标签&lt;ol&gt;&lt;/ol&gt;(order list),
+                            在&lt;ol&gt;&lt;/ol&gt;里面有&lt;li&gt;&lt;/li&gt; 标签对，
+                            代表列表中的一个项目，如你所看到的，我用了6个li标签对。
+                        </li>
+                    </ol>
+                </xmp>
+                <ol>
+                    <li>大部分标签都有自身的语义</li>
+                    <li>h1标签，表示“header1”,最高级标题，代表一个页面中最重要的标题，<a href="#header1">点击查看：本网页h1标签(渐变色横栏中的“HTML 入门教程”)</a>
+                    </li>
+                    <li>h2标签，表示“header2”,二级标题，代表一个页面中相对比较重要的标题。</li>
+                    <li>此外还有h3到h6，共六个级别。</li>
+                    <li>p标签，表示“paragraph”，代表一个段落。当你需要在网页上写一个段落时，就可以用p标签。</li>
+                    <li>你目前所看到的这6行数据，是用了一个有序列表标签&lt;ol&gt;&lt;/ol&gt;(order list),<br/>在&lt;ol&gt;&lt;/ol&gt;里面有&lt;li&gt;&lt;/li&gt;
+                        标签对，代表列表中的一个项目，如你所看到的，我用了6个li标签对。
+                    </li>
+                </ol>
+            </div>
+            <!-- Hello World! -->
+            <h3 id="section3-3">网页内容</h3>
+            <p>网页的内容全部处于&lt;html&gt;&lt;/html&gt;标签对之中</p>
+            <p>一个标题，就应该用h1-h6这样的标签去实现效果</p>
+            <p>一个列表就应该用&lt;ul&gt;&lt;/ul&gt;(无序列表)或者&lt;ol&gt;&lt;/ol&gt;(有序列表)去实现。（因为有序列表的样式是固定而又单调的，因此一般用“无序列表”+“自定义样式”去表示列表）</p>
+
+            <p class="lead">值得注意的是：</p>
+            <p>千万不要用别的标签，给这个标签化个妆得到与h1相同的效果。</p>
+            <p>语义和样式应当分离</p>
+
+            <!-- 这是一对有意义标签 -->
+            <h3 id="section3-4">网页结构</h3>
+            <p class="text-indent">内容不能杂乱无章，结构混乱，搜索引擎小朋友会迷路的</p>
+            <p class="text-indent">搜索引擎只会根据HTML代码来分析一个网站，识别到h1标签，知道这个是该网站的最高级标题了，
+                这就是这个网页最重要的信息，会做出相应的操作，遇到了p标签，知道这里有一段话了，遇到img标签，知道这里是一张图片。
+                如果整个页面都是div和span这样的无语义的标签，搜索引擎小朋友就会变得迷茫，就会离开这个让他不开心的地方，从而你的网站就崩了，谁也不会来看，
+                随之你也就崩了，最后你的BOSS也就崩了。</p>
+            <p class="text-indent">一句话就是：按照语义，将网页的结构梳理出来，然后利用特定的标签对将之按语义表示出来即可。关于如何使用语义标签，下章细讲。</p>
+            <p class="lead">在此废话那么多，不是告诉大家，语义化很重要，而是告诉大家，语义化是写网页的基本素质，“重要”二字也体现不出其价值。</p>
+
+            <!-- 标签与元素 -->
+            <h3 id="section3-5">标签与元素</h3>
+            <p class="lead">HTML 元素指的是从“开始标签”的开始 到“结束标签”的结束 之间的所有代码。</p>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>开始标签</th>
+                    <th>元素的内容</th>
+                    <th>结束标签</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>&lt;p&gt;</td>
+                    <td>Data</td>
+                    <td>&lt;/p&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;ul&gt;</td>
+                    <td>&nbsp; &lt;li&gt;Data&lt;/li&gt;</td>
+                    <td>&lt;/ul&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;p&gt;</td>
+                    <td>某些 HTML 元素具有空内容，例如 &lt;br /&gt;。</td>
+                    <td>&lt;/p&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;p&gt;</td>
+                    <td>空元素在开始标签中进行关闭，例如 &lt;br /&gt;。</td>
+                    <td>&lt;/p&gt;</td>
+                </tr>
+                <tr>
+                    <td>&lt;p&gt;</td>
+                    <td><p style="color: #23A6D5;font-size:24px;padding: 0;margin: 0px;">大多数 HTML 元素可拥有属性，例如 &lt;p
+                        style="color:#23A6D5;font-size:24px;" &gt;该属性让本行字的颜色变为16进制表示的浅蓝色，字体大小变成24px。</p></td>
+                    <td>&lt;/p&gt;</td>
+                    <!-- background: linear-gradient(-45deg, #23D5AB, #23A6D5, #EE7752, #E73C7E, #23A6D5, #23D5AB); -->
+                </tr>
+                </tbody>
+            </table>
+
+            <!-- 标签与元素 -->
+            <h3 id="section3-6">标签的颜值</h3>
+            <p class="lead">利用 style属性包装标签里面的元素，提高其颜值。</p>
+            <div class="highlight">
+                <xmp>
+                    <span>Hello World!我是内联元素（inline-block），我不会独占一行，我没有语义。</span>
+                    <span style="color: blueviolet; font-size: 20px;font-weight: 700;">Hello World!</span>
+
+                    <div>Hello World!我是块级元素(block)，我独占一行，但我也没有语义。</div>
+                    <div style="color: royalblue; font-size: 20px;font-weight: 700;">Hello World!</div>
+                </xmp>
+                <span>Hello World!我是内联元素（inline-block），我不会独占一行，我没有语义。</span>
+                <span style="color: blueviolet; font-size: 20px;font-weight: 700;">Hello World!</span>
+
+                <div>Hello World!我是块级元素(block)，我独占一行，但我也没有语义。</div>
+                <div style="color: royalblue; font-size: 20px;font-weight: 700;">Hello World!</div>
+            </div>
+
+            <!-- 标签与元素 -->
+            <h3 id="section3-7">你<strong>“块”</strong>乐吗？</h3>
+            <p class="lead">大多数 HTML 元素被定义为块级元素（block）或内联元素(inline-block)。</p>
+            <p class="text-indent">内联元素在显示时通常不会以新行开始，定义 span，用来组合文档中的行内元素。</p>
+            <p class="text-indent">块级元素在浏览器显示时，通常会以新行来开始（和结束），通常定义文档中的分区或节。因此，块级元素+style，特别利于布局，因此div为布局而生。<strong>布局没有特殊含义（语义），仅仅是位置与颜值的改变，因此div没有语义！</strong>
+            </p>
+            <p class="text-indent">所以当你写了如下代码：
+                <xmp>
+                    <div style="font-size:36px;color: black;">一级标题</div>
+                    replace
+                    <h1>一级标题<h1>
+                </xmp>
+            </p>
+            <p class="text-indent">会被很快乐的揍一顿，别问我为什么！好吧，既然你诚心诚意的发问了，我就勉为其难的告诉你吧。因为div没有语义，怎么能用来代表标题呢？
+                打个比方来说：这样写代码，等于你写作文时用空白去表示一个标题，这听起来很滑稽，但事实就是如此滑稽，所以你会被快乐的揍一顿。
+            </p>
+            <p class="lead">言归正传,div是块状元素，span是内联元素，二者都无语义</p>
+            <div class="highlight">
+                <xmp>
+                    <p>常见的块级元素：</p>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 3px;">
+                            <span style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">1</span>
+                            div（用于布局）
+                        </li>
+                        <li style="margin-bottom: 3px;">
+                            <span style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">2</span>
+                            h1~h6（用于标题）
+                        </li>
+                        <li style="margin-bottom: 3px;">
+                            <span style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">3</span>
+                            table（用于表格展示数据）
+                        </li>
+                        <li style="margin-bottom: 3px;">
+                            <span style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">4</span>
+                            ul（呈现无序列表）
+                        </li>
+                        <li style="margin-bottom: 3px;">
+                            <span style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">5</span>
+                            ol（呈现有序列表）
+                        </li>
+                        <li style="margin-bottom: 3px;">
+                            <span style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">6</span>
+                            p（用于写一段话）
+                        </li>
+                    </ul>
+                    <p>常见的内联元素：</p>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 3px;">
+                            <span style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">1</span>
+                            span（用于组合文档中的行内元素）
+                        </li>
+                        <li style="margin-bottom: 3px;">
+                            <span style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">2</span>
+                            a（用于链接）
+                        </li>
+                        <li style="margin-bottom: 3px;">
+                            <span style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">3</span>
+                            strong（用于强调：加粗）
+                        </li>
+                        <li style="margin-bottom: 3px;">
+                            <span style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">4</span>
+                            em（用于强调：斜体）
+                        </li>
+                        <li style="margin-bottom: 3px;">
+                            <span style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">5</span>
+                            img（用于展示图片）
+                        </li>
+                    </ul>
+                </xmp>
+
+                <p>常见的块级元素：</p>
+                <ul style="list-style: none;">
+                    <li style="margin-bottom: 3px;"><span
+                            style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">1</span>div（用于布局）
+                    </li>
+                    <li style="margin-bottom: 3px;"><span
+                            style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">2</span>h1~h6（用于标题）
+                    </li>
+                    <li style="margin-bottom: 3px;"><span
+                            style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">3</span>table（用于表格展示数据）
+                    </li>
+                    <li style="margin-bottom: 3px;"><span
+                            style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">4</span>ul（呈现无序列表）
+                    </li>
+                    <li style="margin-bottom: 3px;"><span
+                            style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">5</span>ol（呈现有序列表）
+                    </li>
+                    <li style="margin-bottom: 3px;"><span
+                            style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">6</span>p（用于写一段话）
+                    </li>
+                </ul>
+                <p>常见的内联元素：</p>
+                <ul style="list-style: none;">
+                    <li style="margin-bottom: 3px;"><span
+                            style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">1</span>span（用于组合文档中的行内元素）
+                    </li>
+                    <li style="margin-bottom: 3px;"><span
+                            style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">2</span>a（用于链接）
+                    </li>
+                    <li style="margin-bottom: 3px;"><span
+                            style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">3</span>strong（用于强调：加粗）
+                    </li>
+                    <li style="margin-bottom: 3px;"><span
+                            style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">4</span>em（用于强调：斜体）
+                    </li>
+                    <li style="margin-bottom: 3px;"><span
+                            style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">5</span>img（用于展示图片）
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+
+        <!-- HTML 语义化标签 -->
+        <section id="section4" class="content">
+            <h2>四、HTML 语义化标签</h2>
+            <p class="lead"></p>
+
+            <!-- 结构语义化IDE -->
+            <h3 id="section4-1">结构语义化</h3>
+            <p class="lead">HTML中有一些标签能够告诉浏览器和开发者网页的结构</p>
+            <div class="highlight">
+                <xmp>
+                    <header style="margin: 5px; border: 1px solid #23A6D5;width:100%;text-align: center;">
+                        header
+
+                        <nav style="margin: 5px; border: 1px solid #23A6D5;width:100%;text-align: center;">
+                            <ul style="list-style: none;">
+                                <li style="display: inline-block;">HTML</li>
+                                <li style="display: inline-block;">CSS</li>
+                                <li style="display: inline-block;">JavaScript</li>
+                            </ul>
+                        </nav>
+                    </header>
+                    <main style="display: block;margin: 20px 5px; padding: 20px 20px; border: 1px solid #23A6D5;">
+                        <article
+                                style="display: inline-block;width: 60%; border: 1px solid #23A6D5;text-align: center;">
+                            article
+                            <section style="margin: 5px; border: 1px solid #23A6D5;text-align: center;">
+                                section 1
+                            </section>
+                            <section style="margin: 5px; border: 1px solid #23A6D5;text-align: center;">
+                                section 2
+                            </section>
+                        </article>
+                        <aside style="display: inline-block;width: 28%; border: 1px solid #23A6D5;text-align: center;">
+                            aside
+                        </aside>
+                    </main>
+                    <footer style="margin: 5px; border: 1px solid #23A6D5; width:100%;text-align:center;">
+                        CopyRight
+                    </footer>
+                </xmp>
+                <header style="margin: 5px; border: 1px solid #23A6D5;width:100%;text-align:center;">
+                    header
+
+                    <nav style="margin: 5px; border: 1px solid #23A6D5;width:100%;text-align:center;">
+                        <ul style="list-style: none;">
+                            <li style="display: inline-block;">HTML</li>
+                            <li style="display: inline-block;">CSS</li>
+                            <li style="display: inline-block;">JavaScript</li>
+                        </ul>
+                    </nav>
+                </header>
+                <main style="display: block;margin: 20px 5px; padding: 20px 20px; border: 1px solid #23A6D5;">
+                    <article style="display: inline-block;width: 60%; border: 1px solid #23A6D5;text-align: center;">
+                        article
+                        <section style="margin: 5px; border: 1px solid #23A6D5;text-align: center;">
+                            section 1
+                        </section>
+                        <section style="margin: 5px; border: 1px solid #23A6D5;text-align: center;">
+                            section 2
+                        </section>
+                    </article>
+                    <aside style="display: inline-block;width: 28%; border: 1px solid #23A6D5;text-align: center;">
+                        aside
+                    </aside>
+                </main>
+                <footer style="margin: 5px; border: 1px solid #23A6D5;width:100%;text-align:center;">
+                    CopyRight
+                </footer>
+            </div>
+            <p>header代表页首</p>
+            <p>nav代表导航栏</p>
+            <p>main代表主要内容。一个网站一般只能用一个main标签。why？就算你像哪吒一样，能够三头六臂，但你也只有一个身体。</p>
+            <p>article代表主要的文本内容，一般用于显示主要文本</p>
+            <p>section代表一节内容</p>
+            <p>aside代表侧边内容，一般用于广告、侧导航栏</p>
+            <p>footer代表页脚</p>
+            <p class="text-indent">一个网页的结构，大体上可以用这些标签描述，本网页就是完全利用这样的结构划分，可以按F12打开浏览器的开发者工具，查看代码。</p>
+
+
+            <!-- 标题语义化 -->
+            <h3 id="section4-2">标题语义化</h3>
+            <p class="lead">HTML中有一些标签能够告诉浏览器和开发者网页的标题层次</p>
+            <p class="text-indent">h1到h6按标题重要性，依次递减，权重依次递减。这在搜索引擎（SEO）中占有极其重要的地位。</p>
+            <div class="highlight">
+                <xmp>
+                    <h1>一级标题</h1>
+                    <h2>二级标题</h2>
+                    <h3>三级标题</h3>
+                    <h4>四级标题</h4>
+                    <h5>五级标题</h5>
+                    <h6>六级标题</h6>
+                </xmp>
+                <h1 style="font-size: 36px;">一级标题</h1>
+                <h2 style="font-size: 32px;">二级标题</h2>
+                <h3 style="font-size: 28px;">三级标题</h3>
+                <h4 style="font-size: 24px;">四级标题</h4>
+                <h5 style="font-size: 20px;">五级标题</h5>
+                <h6 style="font-size: 16px;">六级标题</h6>
+            </div>
+            <p class="lead">需要注意的是：</p>
+            <ol>
+                <li>一个页面只能有一个h1，h1会被赋予最高权重。像写文章一般，我们写作文不会写多个主标题，因此一个页面只能写一个h1。</li>
+                <li>h1和h6之间不要出现断层，这样确保层次不断，由最重要到局部内容。</li>
+                <li>我们可以给h1~h6定义样式，但我们不能用h1~h6来定义样式</li>
+                <p>很多时候我们要为文本定义大小，有些人喜欢用hn标签来替代写style属性，使用标签控制样式，这样做，
+                    你会被快乐的捶一顿的。HTML关注语义，通过语义分析结构，style关注样式，而这关注点不同，因此结构与样式不可混为一谈，结构和样式应当分离。但我们可以给h1加上样式。</p>
+                <li>千万不要用div来代替标题，div没有语义！用div代替h1~h6，是一个大通病。</li>
+            </ol>
+
+            <!-- 图片语义化 -->
+            <h3 id="section4-3">图片语义化</h3>
+            <p class="lead">HTML中有一些标签能够告诉浏览器和开发者网页的图片的含义</p>
+            <p class="lead">一张图片不仅是展示给用户看的，也要告诉搜索引擎一些信息,因此我们需要注意以下2点</p>
+            <ol>
+                <li>注意img的alt、title属性</li>
+                <li>注意figure，figcaption元素</li>
+            </ol>
+            <div class="highlight">
+                <xmp>
+                    <figure>
+                        <figcaption>这里是图片的图注,当然，图注不是必须的，
+                            但如果要实现图片+图注这样的效果，这2种标签是最好的选择
+                        </figcaption>
+                        <img style="width: 100%;height: 200px;"
+                             src="img/111.png"
+                             alt="(图片描述)给搜索引擎小朋友看的"
+                             title="(图片描述)给用户看的,用户的鼠标悬停在图片上即可看到"/>
+                    </figure>
+                </xmp>
+                <figure>
+                    <figcaption>这里是图片的图注,当然，图注不是必须的，
+                        但如果要实现图片+图注这样的效果，这2种标签是最好的选择
+                    </figcaption>
+                    <img style="width: 100%;height: 200px;"
+                         src="img/111.png"
+                         alt="(图片描述)给搜索引擎小朋友看的"
+                         title="(图片描述)给用户看的,用户的鼠标悬停在图片上即可看到">
+                </figure>
+            </div>
+            <p class="text-indent">title还可以是很多标签的属性，比如本网页的导航栏，你可以去看看效果</p>
+
+
+            <!-- 表格语义化 -->
+            <h3 id="section4-4">表格语义化</h3>
+            <p class="lead">HTML中有一些标签能够告诉浏览器和开发者网页的表格的数据的类别</p>
+            <div class="highlight">
+                <xmp>
+                    <table border="1" width="100%" cellpadding="10" cellspacing="0" style="margin-bottom: 20px;">
+                        <caption>表格标题(默认居中)</caption>
+                        <thead>
+                        <tr>
+                            <th>表头单元格（默认居中加粗）</th>
+                            <th>表头单元格（默认居中加粗）</th>
+                            <th>表头单元格（默认居中加粗）</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>表身标准单元格</td>
+                            <td>表身标准单元格</td>
+                            <td>表身标准单元格</td>
+                        </tr>
+                        </tbody>
+                        <tfoot>
+                        <tr>
+                            <td>表脚标准单元格</td>
+                            <td>表脚标准单元格</td>
+                            <td>表脚标准单元格</td>
+                        </tr>
+                        </tfoot>
+                    </table>
+                </xmp>
+                <table border="1" width="100%" cellpadding="10" cellspacing="0" style="margin-bottom: 20px;">
+                    <caption>表格标题(默认居中)</caption>
+                    <thead>
+                    <tr>
+                        <th>表头单元格（默认居中加粗）</th>
+                        <th>表头单元格（默认居中加粗）</th>
+                        <th>表头单元格（默认居中加粗）</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>表身标准单元格</td>
+                        <td>表身标准单元格</td>
+                        <td>表身标准单元格</td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                    <tr>
+                        <td>表脚标准单元格</td>
+                        <td>表脚标准单元格</td>
+                        <td>表脚标准单元格</td>
+                    </tr>
+                    </tfoot>
+                </table>
+            </div>
+            <p class="text-indent">一个表格被分为三部分 thead,tbody,tfoot（表头，表身，表脚）三部分。tfoot用的很少，但它体现的是表格结构的完整。</p>
+            <p class="text-indent">表格的三部分，每一个部分都以“行”为基准，“单元格”会分解“行”，因此 tr(table-row）必须嵌套
+                th,td(table-cell),这样能体现出结构的完整。</p>
+            <!-- Others -->
+            <h3 id="section4-5">Others</h3>
+            <p class="lead">表单语义化</p>
+            <p class="text-indent">表单在初学阶段是不会涉及的，为了轻松不头疼，就不讲了。</p>
+            <p class="lead">HTML中零散的语义标签</p>
+
+            <!-- 换行符 -->
+            <h4>换行符 &lt;br/&gt;</h4>
+            <p>&lt;br&gt; 可插入一个简单的换行符。</p>
+            <p>&lt;br&gt; 是空标签，它没有结束标签，因此推荐大家这样写：&lt;br/&gt;，把结束标签放在开始标签中</p>
+            <p class="text-indent">很多萌新会使用&lt;br/&gt;来进行结构换行，</p>
+            <div class="highlight">
+                <xmp><br>这是错误写法，br没有结束标签</br>
+                    <span>1<span> <br/>
+<span>2<span> <br/>
+                </xmp>
+                <br>这是错误写法，br没有结束标签</br>
+                <span>1<span> <br/>
+						<span>2<span> <br/>
+            </div>
+            <p class="lead">以上示例是<strong>错误</strong>的用法</p>
+            <p class="text-indent"> &lt;br/&gt;有自己特定的语义：对文本换行，不能用于别的情况。 </p>
+
+            <!-- 图片 -->
+            <h4>图片 &lt;img/&gt;</h4>
+            <p class="lead">同理：img要这样写：</p>
+            <p class="text-indent">&lt;img src=".../.../..." alt="给浏览器看的图片描述" title="给用户看的图片描述" /&gt;</p>
+            <p>img标签要正确的结束需要在最后加一个“/”</p>
+
+            <!-- ul -->
+            <h4>无序列表 &lt;ul/&gt;</h4>
+            <p class="lead">列表类型的数据，推荐采用ul+li标签</p>
+            <p class="text-indent">不推荐使用div+div这样的无语义标签,因为不仅丧失了语义，还因为布局常用div布局，如果div标签过多，不利于维护</p>
+            <div class="highlight">
+                <xmp>
+                    <div>
+                        <div>1.1</div>
+                        <div>2.1</div>
+                        <div>3.1</div>
+                    </div>
+                </xmp>
+
+                <div style="margin-bottom: 20px;">
+                    <div>1.1</div>
+                    <div>2.1</div>
+                    <div>3.1</div>
+                </div>
+
+            </div>
+
+            <p class="text-indent">因为有序列表的样式固定，所以大多数采用无序列表+span自定义格式去实现效果，关于style的一切，都在CSS教程里面，此处可以跳过看不懂的style，看看就好。</p>
+            <div class="highlight">
+                <xmp>
+                    <p>常见的块级元素：</p>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 3px;">
+                            <span style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">1</span>
+                            div（用于布局）
+                        </li>
+                        <li style="margin-bottom: 3px;">
+                            <span style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">2</span>
+                            h1~h6（用于标题）
+                        </li>
+                        <li style="margin-bottom: 3px;">
+                            <span style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">3</span>
+                            table（用于表格展示数据）
+                        </li>
+                        <li style="margin-bottom: 3px;">
+                            <span style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">4</span>
+                            ul（呈现无序列表）
+                        </li>
+                        <li style="margin-bottom: 3px;">
+                            <span style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">5</span>
+                            ol（呈现有序列表）
+                        </li>
+                        <li style="margin-bottom: 3px;">
+                            <span style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">6</span>
+                            p（用于写一段话）
+                        </li>
+                    </ul>
+                    <p>常见的内联元素：</p>
+                    <ul style="list-style: none;">
+                        <li style="margin-bottom: 3px;">
+                            <span style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">1</span>
+                            span（用于组合文档中的行内元素）
+                        </li>
+                        <li style="margin-bottom: 3px;">
+                            <span style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">2</span>
+                            a（用于链接）
+                        </li>
+                        <li style="margin-bottom: 3px;">
+                            <span style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">3</span>
+                            strong（用于强调：加粗）
+                        </li>
+                        <li style="margin-bottom: 3px;">
+                            <span style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">4</span>
+                            em（用于强调：斜体）
+                        </li>
+                        <li style="margin-bottom: 3px;">
+                            <span style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">5</span>
+                            img（用于展示图片）
+                        </li>
+                    </ul>
+                </xmp>
+                <p>常见的块级元素：</p>
+                <ul style="list-style: none;">
+                    <li style="margin-bottom: 3px;"><span
+                            style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">1</span>div（用于布局）
+                    </li>
+                    <li style="margin-bottom: 3px;"><span
+                            style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">2</span>h1~h6（用于标题）
+                    </li>
+                    <li style="margin-bottom: 3px;"><span
+                            style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">3</span>table（用于表格展示数据）
+                    </li>
+                    <li style="margin-bottom: 3px;"><span
+                            style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">4</span>ul（呈现无序列表）
+                    </li>
+                    <li style="margin-bottom: 3px;"><span
+                            style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">5</span>ol（呈现有序列表）
+                    </li>
+                    <li style="margin-bottom: 3px;"><span
+                            style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">6</span>p（用于写一段话）
+                    </li>
+                </ul>
+                <p>常见的内联元素：</p>
+                <ul style="list-style: none;">
+                    <li style="margin-bottom: 3px;"><span
+                            style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">1</span>span（用于组合文档中的行内元素）
+                    </li>
+                    <li style="margin-bottom: 3px;"><span
+                            style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">2</span>a（用于链接）
+                    </li>
+                    <li style="margin-bottom: 3px;"><span
+                            style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">3</span>strong（用于强调：加粗）
+                    </li>
+                    <li style="margin-bottom: 3px;"><span
+                            style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">4</span>em（用于强调：斜体）
+                    </li>
+                    <li style="margin-bottom: 3px;"><span
+                            style="font-size: 1.2em;padding: 0px 4px;margin-right:0.2em;background-color: #23A6D5;">5</span>img（用于展示图片）
+                    </li>
+                </ul>
+
+            </div>
+            <!-- strong em -->
+            <h4>强调字符的标签&lt;strong&gt;&lt;em&gt;</h4>
+            <p class="lead">二者均为内联标签，均会增强文本的权重</p>
+            <p class="text-indent">样式表现为:&lt;strong&gt;:加粗文本,&lt;em&gt;：文本倾斜。</p>
+            <div class="highlight">
+                <xmp>
+                    <p>样式表现为:<strong>&lt;strong&gt;:加粗文本。</strong> <em>&lt;em&gt;：斜体</em></p>
+                </xmp>
+                <p>样式表现为:<strong>&lt;strong&gt;:加粗文本，</strong> <em>&lt;em&gt;：文本倾斜。</em></p>
+            </div>
+
+
+            <!-- 无语义标签 -->
+            <h3 id="section4-6">无语义标签</h3>
+            <p class="lead">并不是所有标签都有语义</p>
+            <p class="text-indent">&lt;div&gt;为布局而生</p>
+            <p class="text-indent">&lt;span&gt;为组合行内元素而生</p>
+
+            <!-- 语义化验证 -->
+            <h3 id="section4-7">语义化验证</h3>
+            <p class="lead">裸奔的网站，就是去掉所有style样式的网站</p>
+            <p class="text-indent">最简单粗暴的方法就是把&lt;head&gt;&lt;/head&gt;删掉</p>
+            <p class="text-indent">此外还有一些浏览器插件能实现该功能</p>
+        </section>
+
+        <section id="section5" class="content">
+            <h2>五、W3shchool</h2>
+            <a href="https://baike.baidu.com/item/W3School" target="_blank" title="点击转到W3school百度百科">来源：百度百科</a>
+            <h3>简介</h3>
+            <p class="text-indent">W3School是因特网上最大的WEB开发者资源，是完全免费的，是非营利性的，一直在升级和更新，是W3C中国社区成员，致力于推广W3C标准技术。</p>
+            <h3>特点</h3>
+
+            <p class="lead">技术资源</p>
+            <p class="text-indent">全球最大的WEB技术资源</p>
+            <p class="text-indent">W3School是因特网上最大的WEB开发者资源，其中包括全面的教程、完善的参考手册以及庞大的代码库。</p>
+            <p class="text-indent">W3School每月接受上百万人次的用户访问，并产生数千万的页面浏览量。</p>
+
+            <p class="lead">完全免费</p>
+            <p class="text-indent">W3School把提供高品质的WEB技术资源作为自身的使命。</p>
+            <p class="text-indent">W3School将为用户提供永久免费的内容和服务。</p>
+
+            <p class="lead">非营利</p>
+            <p class="text-indent">W3School不以营利为目的，尽管维持W3School正常运营的费用非常昂贵。</p>
+            <p class="text-indent">W3School的运营费用主要来自两方面：赢科公司的无私投入，以及少量的广告收入。</p>
+            <p class="text-indent">W3School一直将全部资金用于网站内容的开发以及服务器硬件的升级和维护。</p>
+
+            <p class="lead">一句话：W3school 前端工程师的福音</p>
+            <a href="http://www.w3school.com.cn" title="W3school">Hello W3shool</a>
+        </section>
+
+    </article>
+
+    <!-- 侧边导航栏 -->
+    <aside class="main-right">
+        <nav id="sidenav" class="sidenav">
+            <ul class="nav nav-border-radius">
+                <li onclick="displayul(this)"><a href="#section1" onmousedown="sideActiveStyle(this)"
+                                                 style="background-color: rgba(150,150,200,0.5)" title="1-1 概述">概述</a>
+                    <ul style="display: block;">
+                        <li><a href="#section2-1" onmousedown="sideActiveStyle(this)" title="真的很简单">写在前边</a></li>
+                    </ul>
+                </li>
+                <li onclick="displayul(this)"><a href="#section2" onmousedown="sideActiveStyle(this)" title="HTML简介">HTML
+                    简介</a>
+                    <ul>
+                        <li><a href="#section2-1" onmousedown="sideActiveStyle(this)" title="集成开发环境">Hello World!</a>
+                        </li>
+                        <li><a href="#section2-2" onmousedown="sideActiveStyle(this)" title="你好 世界">选择一个IDE</a></li>
+                        <li><a href="#section2-3" onmousedown="sideActiveStyle(this)" title="有灵魂的代码">有灵魂的标签</a></li>
+                    </ul>
+                </li>
+                <li onclick="displayul(this)"><a href="#section3" onmousedown="sideActiveStyle(this)"
+                                                 title="写有灵魂的HTML代码">HTML 语义化</a>
+                    <ul>
+                        <li><a href="#section3-1" onmousedown="sideActiveStyle(this)" title="语义的作用">什么是语义？</a></li>
+                        <li><a href="#section3-2" onmousedown="sideActiveStyle(this)" title="语义的作用">语义化的作用</a></li>
+                        <li><a href="#section3-3" onmousedown="sideActiveStyle(this)" title="网页内容">网页内容</a></li>
+                        <li><a href="#section3-4" onmousedown="sideActiveStyle(this)" title="网页结构">网页结构</a></li>
+                        <li><a href="#section3-5" onmousedown="sideActiveStyle(this)" title="标签的秘密">标签与元素</a></li>
+                        <li><a href="#section3-6" onmousedown="sideActiveStyle(this)" title="颜值不能低">标签的颜值</a></li>
+                        <li><a href="#section3-7" onmousedown="sideActiveStyle(this)" title="标签">你<strong>“块”</strong>乐吗？</a>
+                        </li>
+                    </ul>
+                </li>
+                <li onclick="displayul(this)"><a href="#section4" onmousedown="sideActiveStyle(this)" title="有灵魂的标签">HTML
+                    语义化标签</a>
+                    <ul>
+                        <li><a href="#section4-1" onmousedown="sideActiveStyle(this)" title="标题语义化">结构语义化</a></li>
+                        <li><a href="#section4-2" onmousedown="sideActiveStyle(this)" title="图片语义化">标题语义化</a></li>
+                        <li><a href="#section4-3" onmousedown="sideActiveStyle(this)" title="表格语义化">图片语义化</a></li>
+                        <li><a href="#section4-4" onmousedown="sideActiveStyle(this)" title="结构语义化">表格语义化</a></li>
+                        <li><a href="#section4-5" onmousedown="sideActiveStyle(this)" title="Others">Others</a></li>
+                        <li><a href="#section4-6" onmousedown="sideActiveStyle(this)" title="无语义标签">无语义标签</a></li>
+                        <li><a href="#section4-7" onmousedown="sideActiveStyle(this)" title="裸奔的网站你见过吗？">语义化验证</a></li>
+                    </ul>
+                </li>
+                <li onclick="displayul(this)"><a href="#section5" onmousedown="sideActiveStyle(this)"
+                                                 title="恭喜你已经进阶成功了">HTML 更上一层楼</a>
+                    <ul>
+                        <li><a href="#section5" onmousedown="sideActiveStyle(this)" title="w3school">W3school</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+</main>
+
+<!-- footer -->
+<footer id="footer">
+    CopyRight
+</footer>
+
+<!-- js文件 -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
