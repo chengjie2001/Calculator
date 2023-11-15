@@ -1,3 +1,2 @@
 # 数据结构与算法：前端计算器的实现(JavaScript)
-[calculator.chengjie.info](calculator.chengjie.info)
-<a href="calculator.chengjie.info">calculator.chengjie.info</a>
+[http://calculator.chengjie.info/](http://calculator.chengjie.info/)
